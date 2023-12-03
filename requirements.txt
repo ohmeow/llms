@@ -1,0 +1,16 @@
+accelerate
+bitsandbytes
+datasets
+evaluate
+loralib
+matplotlib
+nltk
+peft
+pytesseract
+python-dotenv
+py7zr
+rouge-score
+transformers
+trl
+wandb
+xformers

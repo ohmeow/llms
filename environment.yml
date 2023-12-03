@@ -1,0 +1,13 @@
+name: llms
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - black
+  - notebook
+  - ipywidgets
+  - seaborn
+  - pip
+  - pip:
+      - ipykernel
+      - -r requirements.txt
