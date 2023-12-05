@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: wgpubs/zephyr-7b-sft-lora
+model_name_or_path: HuggingFaceH4/zephyr-7b-beta
 torch_dtype: auto
 
 # LoRA arguments

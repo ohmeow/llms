@@ -27,7 +27,7 @@ bf16: true
 do_train: true
 do_eval: true
 evaluation_strategy: epoch
-gradient_accumulation_steps: 128
+gradient_accumulation_steps: 256
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
@@ -44,7 +44,7 @@ num_train_epochs: 1
 output_dir: ./models/zephyr-7b-sft-lora
 overwrite_output_dir: true
 per_device_eval_batch_size: 4
-per_device_train_batch_size: 2 # effective bsz = bsz * n_gups * accumulation_steps (e.g., 2*2*128=512)
+per_device_train_batch_size: 1 # effective bsz = bsz * n_gups * accumulation_steps (e.g., 2*2*128=512)
 push_to_hub: true
 report_to:
 - wandb
